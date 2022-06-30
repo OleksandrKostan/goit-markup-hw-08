@@ -1,0 +1,13 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-white-color);
+  color: var(--title-text-color);
+}
