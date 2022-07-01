@@ -667,12 +667,20 @@ img {
 
 .portfolio-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 }
-
-.portfolio-filter__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .portfolio-filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-filter {
+    margin-bottom: 50px;
+  }
 }
 
 /* групи портфоліо */
@@ -687,7 +695,6 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 4px;
 }
@@ -702,13 +709,22 @@ img {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px -15px;
+  gap: 30px;
 }
 
 .flex__element {
   transition: box-shadow 250ms var(--primary-cubic);
-  flex-basis: calc((100% - 90px) / 3);
-  margin: 15px 15px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .flex__element {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex__element {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .flex__element:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
