@@ -7,10 +7,10 @@
 .clients__item {
   width: calc((100% - 30px) / 2);
   @include tablet {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
   @include desktop {
-    width: calc((100% - 180px) / 6);
+    width: calc((100% - 150px) / 6);
   }
 }
 
