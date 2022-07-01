@@ -1,4 +1,13 @@
+.work__title {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(100% / 3 - 30px);

@@ -362,10 +362,21 @@ img {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 1199px) {
+  .work__title {
+    display: none;
+  }
+}
+
 .work {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(33.3333333333% - 30px);
+}
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__item + .work__item {
