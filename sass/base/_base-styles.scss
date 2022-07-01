@@ -20,5 +20,7 @@
   }
 }
 .section__peculiarity {
-  padding-bottom: 0;
+  @include desktop {
+    padding-bottom: 0;
+  }
 }
