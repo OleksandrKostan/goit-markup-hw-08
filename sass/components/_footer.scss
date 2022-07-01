@@ -3,6 +3,20 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer__thumb {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    margin-right: auto;
+  }
+}
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -37,23 +51,43 @@
 }
 
 .address__geo {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 .address__mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .address-block {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0px;
+    margin-right: 70px;
+  }
 }
 
 /* .join */
 .join {
-  margin-right: auto;
+  // margin-right: auto;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
 }
 .join__title {
   margin-bottom: 20px;
@@ -103,6 +137,14 @@
   color: rgba(255, 255, 255, 0.6);
 
   transition: border-color 250ms var(--primary-cubic);
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 
   .subscripe__form-field:focus-within & {
     outline: none;
@@ -114,6 +156,15 @@
     line-height: 1.25;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+.subscripe__form-field {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+  @include desktop {
+    display: inline-block;
   }
 }
 

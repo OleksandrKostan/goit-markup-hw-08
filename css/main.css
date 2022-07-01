@@ -529,6 +529,23 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__thumb {
+    display: flex;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__thumb {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__thumb {
+    margin-right: auto;
+  }
+}
+
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -562,25 +579,54 @@ img {
 }
 
 .address__geo {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .address__geo {
+    margin-bottom: 9px;
+  }
 }
 
 .address__mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .address__mail {
+    margin-bottom: 9px;
+  }
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .address-block {
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .address-block {
+    margin-bottom: 0px;
+    margin-right: 70px;
+  }
 }
 
 /* .join */
 .join {
-  margin-right: auto;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
 }
 
 .join__title {
@@ -626,6 +672,18 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: border-color 250ms var(--primary-cubic);
 }
+@media screen and (max-width: 767px) {
+  .subscripe__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscripe__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
 .subscripe__form-field:focus-within .subscripe__input {
   outline: none;
   border-color: var(--accent-color);
@@ -634,6 +692,18 @@ img {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .subscripe__form-field {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscripe__form-field {
+    display: inline-block;
+  }
 }
 
 .subscripe__button {
