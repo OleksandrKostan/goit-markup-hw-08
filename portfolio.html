@@ -20,7 +20,7 @@
   </head>
   <body class="page">
     <!--Шапка сайта-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header__nav">
         <nav class="nav">
           <a href="/index.html" class="logo"
@@ -60,8 +60,21 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="mobile__menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Мобильное меню">
+            <use
+              class="nav__menu__open"
+              href="/images/icons.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <!--main-->
     <main>
       <section class="section">
@@ -568,5 +581,51 @@
         </div>
       </div>
     </footer>
+    <!--mobile-menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile__menu js-close-menu">
+        <svg width="40" height="40" aria-label="Мобильное меню">
+          <use
+            class="nav__menu__open"
+            href="./images/icons.svg#icon-close_40px"
+          ></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__pages list">
+        <li class="mobile__pages--position">
+          <a href="index.html" class="mobile__pages__item mobile__current"
+            >Студия</a
+          >
+        </li>
+        <li class="mobile__pages--position">
+          <a href="portfolio.html" class="mobile__pages__item">Портфолио</a>
+        </li>
+        <li><a href="" class="mobile__pages__item">Контакты</a></li>
+      </ul>
+      <div class="mobile__menu--position">
+        <ul class="mobile__contacts list">
+          <li>
+            <a href="" class="mobile__contacts--phone">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile__contacts--position">
+            <a href="" class="mobile__contacts--mail">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile__social list">
+          <li class="border">
+            <a href="" class="mobile__social__item">Instagram</a>
+          </li>
+          <li class="border">
+            <a href="" class="mobile__social__item">Twitter</a>
+          </li>
+          <li class="border">
+            <a href="" class="mobile__social__item">Facebook</a>
+          </li>
+          <li><a href="" class="mobile__social__item">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
